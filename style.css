@@ -1,12 +1,17 @@
-*{
-    text-align: center;
-    margin: auto auto;
-}
+
 h1{
     padding: 10px;
     margin-top: 40px;
     margin: 10px;
     color: rgb(73, 71, 71);
+    margin: auto auto;
+}
+a{
+    text-decoration: none;
+    border: none;
+    width: 100px;
+    height: 40px;
+    margin-top: 300px;
 }
 .result{
     
@@ -28,6 +33,7 @@ h1{
     width: 450px;
     height: 60px;
     border-radius: 15px;
+    margin: auto auto;
 }
 .search input{
     width: 100%;

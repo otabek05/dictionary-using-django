@@ -13,9 +13,9 @@ def index(request):
     return render(request, 'index.html',{'q': word, 'result':result})
 
 def index1(request):
-    word=request.GET.get('q', 'Search')
-    if word and word != '':
-        result=Lugat.objects.filter(uzbekcha=word).all()
+    word2=request.GET.get('h', 'Search')
+    if word2 and word2 != '':
+        result=Lugat.objects.filter(inglizcha=word2).all()
     else:
-        result=None
-    return render(request, 'index2.html',{'q':word, 'result':result})
+        result='Not ffound from database'
+    return render(request, 'index2.html',{'h':word2, 'result':result})
