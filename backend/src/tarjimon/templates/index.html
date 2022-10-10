@@ -10,12 +10,11 @@
     
 </head>
 <body>
-    <img src="https://play-lh.googleusercontent.com/FcC9OA50cbHFRoJcUsTICRZ8tRNUzWozoSLL3WYApa3RF65ZXfq7k6RWeICrV_2yjrKj" alt="">
     <h1>UZ-ENG Dictionary</h1>
     <form method="GET" action="/" class="search">
         <input name="q" value="{{q}}" type="text" placeholder="Search">
     </form>
-    <a href="http://127.0.0.1:8000/uz"><img style='width: 200px;height: 200px;' src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Uzbekistan.svg/800px-Flag_of_Uzbekistan.svg.png?20190823183348" alt=""></a>
+   
     <div class="result">
     
     <table>
@@ -24,8 +23,8 @@
         {% if result %}
         {% for tarjima in result %}
         <tr>
-             <td>{{tarjima.uzbekcha}}</td>
              
+             <td>{{tarjima.uzbekcha}}</td>
         </tr>
         {% endfor %}
         {% endif %}
